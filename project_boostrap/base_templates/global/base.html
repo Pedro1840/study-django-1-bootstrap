@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include 'api_food/partials/head.html' %}
+    <title>{% block title %}{% endblock title %} | iFood</title>
+</head>
+<body>
+    {% include 'api_food/partials/nav_bar.html' %}
+
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            {% block content %}{% endblock content %}
+        </div>
+    </main>
+</body>
+</html>
